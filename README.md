@@ -6,15 +6,15 @@
 The purpose of this project is to create an song recognition program similar to Shazam. The user hears a song that they are unable to recognize, they can activate the CC3200 Launchpad to listen and identify this unknown song. The Lanuchpad will record for a duration of 5 seconds, and display the name and artist of the song on the OLED screen.
 
 # Key Features
-- FRAM 
+- SRAM:  
 
     
 # Discussion 
-- The first large challenge encounter was having to store and send the data to AWS for processing using an HTTP POST. 
+- Our intitial plan was to create a AWS lamba function that will be triggered by a HTTP POST from launchpad. The POST will trasmit to the lamba function a json file containing the base64 representation of the ADC song data. Once revieved, the data is extracted and translate into an mp3 file to be stored into an S3 bucket for another lamba function to process. This second lambda will take the mp3 file, run the ShazamAPI functions and return the name and artist of the song. To retuce the number of steps in this process, in the end, we decided to use the AWS LightSail server that will handle both HTTP `GET` and `POST` functions, as well as the function handlers to take the incoming raw data and covert it into an mp3 file for analysis.  
 
-- The function to identify the song utilized the ShazamAPI developed by Marin-m. Essentially, the imported library used audio fingerprinting to generates a spectrogram of the sound, and maps out the frequency peaks from it. These frequency peaks are then sent to the Shazam servers, which compares the strongest peaks in a database with the peaks both that we sent to determine the identity of the song. 
+- The function to identify the song utilized the ShazamAPI developed by Marin-m. The imported library used audio fingerprinting to generates a spectrogram of the sound, and maps out the frequency peaks from it. These frequency peaks are then sent to the Shazam servers, which compares the strongest peaks in a database with the peaks both that we sent to determine the identity of the song. 
 
-- Our intitial plan was to create a lamba function that once triggered by an HTTP POST by our launchpad, would receieve and deciper the song data, and return the name and artist of the song. In the end, we decided to use the AWS LightSail server and created our own http website to handle the http posts and gets. 
+
 
 # Video Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StTqXEQ2l-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
