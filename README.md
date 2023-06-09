@@ -1,4 +1,4 @@
-### tinyShazam
+#
 
 # by Brandon Alba and Brandon Huynh
 
