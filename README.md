@@ -1,6 +1,6 @@
 
 # TinyShazam
-## by Brandon Alba and Brandon Huynh
+by Brandon Alba and Brandon Huynh
 
 ## Project Overview
 The purpose of this project is to create an song recognition program similar to Shazam. The user hears a song that they are unable to recognize, they can activate the CC3200 Launchpad to listen and identify this unknown song. The Lanuchpad will record for a duration of 5 seconds, and display the name and artist of the song on the OLED screen.
@@ -24,4 +24,5 @@ The purpose of this project is to create an song recognition program similar to 
 
 ## References 
 https://github.com/dotX12/ShazamIO
+
 https://github.com/jekyll/minima/blob/master/README.md 
