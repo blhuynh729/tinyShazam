@@ -1,3 +1,5 @@
+
+
 ## by Brandon Alba and Brandon Huynh
 
 ## Project Overview
@@ -5,4 +7,4 @@ The purpose of this project is to create an song recognition program similar to 
     
     
 ## Key Features    
-    
+[![Everything Is AWESOME](//img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](//www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
