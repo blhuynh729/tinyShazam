@@ -1,5 +1,3 @@
-# tinyShazam
-
 ## by Brandon Alba and Brandon Huynh
 
 ## Project Overview
