@@ -1,7 +1,7 @@
 
 
 # Project Overview
-The purpose of this project is to create an song recognition program similar to Shazam. The user hears a song that they are unable to recognize, they can activate the CC3200 Launchpad to listen and identify this unknown song. The Lanuchpad will record for a duration of 5 seconds, and display the name and artist of the song on the OLED screen.
+The purpose of this project is to create an song recognition program similar to Shazam. When the user hears a song that they are unable to recognize, they can activate the CC3200 Launchpad to listen and identify this unknown song. The Lanuchpad will record for a duration of 5 seconds, and display the name and artist of the song on the OLED screen.
 
 # Key Features
 - FRAM: 256 kBit FRAM chip is used to store 5s of 8bit audio 
