@@ -17,6 +17,7 @@ The purpose of this project is to create an song recognition program similar to 
 
 
 # Video Demo
+Music audio in demo video is removed due to copyright
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8AjH50Y9S9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
