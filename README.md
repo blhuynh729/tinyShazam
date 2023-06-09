@@ -16,5 +16,6 @@ The purpose of this project is to create an song recognition program similar to 
 
 - Our intitial plan was to create a lamba function that once triggered by an HTTP POST by our launchpad, would receieve and deciper the song data, and return the name and artist of the song. In the end, we decided to use the AWS LightSail server and created our own http website to handle the http posts and gets. 
 
-Video Demo
+# Video Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StTqXEQ2l-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
