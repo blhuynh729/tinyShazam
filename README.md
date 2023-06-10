@@ -12,7 +12,7 @@ The purpose of this project is to create an song recognition program similar to 
 
 - To reduce the number of steps in this process, we decided to use the AWS LightSail server. We chose a lightsail server primarily due to the dependencies of the ShazamAPI Python library on ffmpeg, which was difficult to satisty in a Lamda function. The Lightsail server hosts a Flask (Python) web server that can wait for POST requests and handle them as they come in. The POST Function waits for all audio chunks to come in and stitches them into a RAW binary file. From there, it uses another Python audio processing library, providing the bit depth and sample rate, to generate an MP3 file from the audio samples. This MP3 is fed into the ShazamAPI, which generates song information if the song is found.
 
-- The function to identify the song utilized the ShazamAPI developed by Marin-m. The imported library used audio fingerprinting to generates a spectrogram of the sound, and maps out the frequency peaks from it. These frequency peaks are then sent to the Shazam servers, which compares the strongest peaks in a database with the peaks both that we sent to determine the identity of the song. 
+- The function to identify the song utilized the ShazamAPI developed by Marin-m. The imported library used audio fingerprinting to generate a spectrogram of the sound, and maps out the frequency peaks from it. These frequency peaks are then sent to the Shazam servers, which compares the strongest peaks in a database with the peaks that we sent to determine the identity of the song. 
 
 
 
